@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/output.css">
+    <script src="script.js"></script>
+
+    <title>Framework_css</title>
+</head>
+<!-- FAIRE DU JS POUR BUTTON-ACTIVE & BUTTON-DISABLE -->
+
+<body>
+    <main>
+        <div class="container-fluid" style="background-color:#DCDCDC;">
+            <div class="row bg-primary">
+                <nav class="navbar col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <a class="navbar-brand" href="#">WAC</a>
+                    <button class="button button-default button-xs" id="toggler" type="button">
+                        <span class="text-primary">☰</span>
+                    </button>
+            </div>
+            <div class="row" id="row_nav">
+                <div id="navbar-collaspe" class="navbar-collapse nav-mobile col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-info">
+                    <ul class="navbar-nav  nav-bar-mobile col-12 col-sm-12">
+                        <li>
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li>
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                        <li>
+                            <div class="nav-dropdown">
+                                <button class="nav-dropdown-btn bg-info">Dropdown</button>
+                                <div class="dropdown-content">
+                                    <a class="nav-link" href="#">Link 1</a>
+                                    <a class="nav-link" href="#">Link 2</a>
+                                    <a class="nav-link" href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="nav-form col-12 col-sm-12">
+                        <input class="form-input" type="search" placeholder="Search">
+                        <button class="btn button-green" type="submit">Search</button>
+                    </form>
+                </div>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <button class="button button-default button-xs">button-1</button>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <button class="button button-blue button-sm">button-2</button>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <button class="button button-red">button-3</button>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <button class="button button-green button-lg">button-4</button>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2 col-xxl-2">
+                    <button class="button button-orange active">button-5</button>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2 col-xxl-2">
+                    <button class="button button-purple disabled">button-6</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="assets/image_meme_1.png" class="img-responsive img-rounded"
+                        alt="cerveau dit: Hey, are you sleeping">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="assets/image_meme_2.png" class="img-responsive img-blur"
+                        alt="fille dit: Yes, now shut up">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="assets/image_meme_3.png" class="img-responsive img-thumbnail"
+                        alt="cerveau dit: I know how to fix that bug on line 255">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="assets/image_meme_4.png" class="img-responsive img-circle" alt="fille stressée">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <span class="text-muted">text-muted</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <span class="text-primary">text-primary</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <span class="text-success">text-success</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <span class="text-info">text-info</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2 col-xxl-2">
+                    <span class="text-warning">text-warning</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2 col-xxl-2">
+                    <span class="text-error">text-error</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <span class="bg-muted">text-muted</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <span class="bg-primary">text-primary</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <span class="bg-success">text-success</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <span class="bg-info">text-info</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2 col-xxl-2">
+                    <span class="bg-warning">text-warning</span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-2 col-xxl-2">
+                    <span class="bg-error">text-error</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                    <strong class="alert-success">Success!</strong>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                    <strong class="alert-info">Info!</strong>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                    <strong class="alert-warning">Warning!</strong>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                    <strong class="alert-danger">Danger!</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 hidden hidden-sm">
+                    <img src="assets/coeur_1.png" class="img-responsive visible visible-sm visible-md visible-lg "
+                        alt="les bisounours">
+                </div>
+                <div class="col-lg-4 col-xl-4 col-xxl-4">
+                    <img src="assets/screamer_3.png" class="img-responsive hidden hidden-sm hidden-md"
+                        alt="Screamer jeu video">
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <img src="assets/coeur_2.webp" class="img-responsive" alt="La joie en image">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="assets/coeur_1.png" class="img-circle" alt="">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="assets/coeur_1.png" class="img-circle" alt="">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <img src="assets/coeur_1.png" class="img-circle" alt="">
+                </div>
+        </div>
+        <div class="row">
+            <div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <button class="button button-green button-lg">button-4</button>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <button class="button button-green button-lg">button-4</button>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                    <button class="button button-green button-lg">button-4</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
